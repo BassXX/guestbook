@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A Python Flask web application that allows visitors to leave a public comment without creating a user account." />
-    <title>{% block title %}{% endblock %}Guestbook</title>
+    <title>{% block title %}{% endblock %}GC-Hotspot</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/toggle-bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/toggle-bootstrap-dark.css') }}">
@@ -16,7 +16,7 @@
 <body class="bootstrap">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg border-bottom shadow-sm mb-4 bg-light">
-            <a class="navbar-brand h1" href="/">Guestbook</a></a>
+            <a class="navbar-brand h1" href="/">GC-Hotspot</a></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,11 +43,6 @@
         {% block content %}{% endblock %}
     </main>
     <footer class="fixed-bottom">
-        <nav class="navbar justify-content-center border-top mt-4 bg-light">
-            <a href="/api/v1" class="nav-item nav-link">API</a>
-            <a href="/metrics" class="nav-item nav-link">Metrics</a>
-            <a href="/health" class="nav-item nav-link">Health</a>
-        </nav>
         <div class="footer-copyright text-center py-3 bg-light">
             Made with <span style="color:#ec3935;">&#9829;</span> by
             <a href="https://github.com/jakuboskera" target="_blank" rel="noopener noreferrer">@jakuboskera</a>
